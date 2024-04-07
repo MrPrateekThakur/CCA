@@ -3,9 +3,7 @@ import '../App.css';
 export default function footer() {
     return <>
         <div id="footer">
-            <div id="container">
-                ___________________________________________________________________________________________________________________________________________________________________________________________________
-            </div>
+            <div id="container"></div>
             <div id="footer-content">
                 <img src='assets/logo.png' id='logo' alt='logo' />
                 <div id="footer-list">
