@@ -8,9 +8,9 @@ import Footer from './Components/Footer.js';
 function App() {
   return <>
     <Header />
-    {/* <Routes>
+    <Routes>
       <Route path='/' element={<Home />} />
-    </Routes> */}
+    </Routes>
     <Footer />
     {/* <Home /> */}
   </>

@@ -2,10 +2,12 @@ import Banner from "./Banner.js";
 
 export default function Home() {
     return <>
-        <div className="container mt-3">
-            <Banner />
-            <hr id="sectionLine" />
-
-        </div>
+        <Banner />
+        <hr id="sectionLine" />
+        {/* Player - Pradumya */}
+        {/* Team - Ankit */}
+        {/* Tournaments - Ritesh */}
+        {/* About - Prasang */}
+        {/* Contact Us - Prasang*/}
     </>
 }
