@@ -17,7 +17,9 @@ body {
 }
 
 #container {
-  width: 95vw;
+  border: 1px solid #FFFFFF;
+  width: 90%;
+  height: 1px;
   overflow: hidden;
 }
 

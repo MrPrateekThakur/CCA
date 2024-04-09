@@ -3,10 +3,21 @@ import Banner from "./Banner.js";
 
 export default function Home() {
     return <>
-        <div className="container mt-3">
+        <div className="text-center d-flex flex-column align-items-center gap-4">
             <Banner />
-            <hr id="sectionLine" />
-            <Player/>
+            <div id="container"></div>
+            <Players />{/* Players - Pradumya */}
+            <div id="container"></div>
+            <h3>Teams</h3>
+            {/* Team - Ankit */}
+            <div id="container"></div>
+            <UpcomingEvent />
+            <div id="container"></div>
+            <h3>About</h3>
+            {/* About - Prasang */}
+            <div id="container"></div>
+            <h3>Contact Us</h3>
+            {/* Contact Us - Prasang*/}
         </div>
-    </>
+  </>
 }
