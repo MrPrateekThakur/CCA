@@ -14,8 +14,6 @@ export default function Home() {
             <div id="sectionLine"></div>
             <Players />
             <div id="sectionLine"></div>
-            {/* <Team />
-            <div id="sectionLine"></div> */}
             <UpcomingEvent />
             <div id="sectionLine"></div>
             <About />
