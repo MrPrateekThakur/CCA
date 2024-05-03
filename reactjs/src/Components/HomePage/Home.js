@@ -1,23 +1,28 @@
-import Player from "../Players/Player.js";
+import About from "./About.js";
 import Banner from "./Banner.js";
+import ContactUs from "./ContactUs.js";
+import Players from "./Player.js";
+import UpcomingEvent from "./UpcomingEvents.js";
+import Header from '../Header.js';
+import Footer from '../Footer.js';
 
 export default function Home() {
     return <>
-        <div className="text-center d-flex flex-column align-items-center gap-4">
+        <Header />
+        <div className="d-flex flex-column align-items-center gap-4">
             <Banner />
-            <div id="container"></div>
-            <Players />{/* Players - Pradumya */}
-            <div id="container"></div>
-            <h3>Teams</h3>
-            {/* Team - Ankit */}
-            <div id="container"></div>
+            <div id="sectionLine"></div>
+            <Players />
+            <div id="sectionLine"></div>
             <UpcomingEvent />
-            <div id="container"></div>
-            <h3>About</h3>
-            {/* About - Prasang */}
-            <div id="container"></div>
-            <h3>Contact Us</h3>
-            {/* Contact Us - Prasang*/}
+            <div id="sectionLine"></div>
+            <About />
+            <div id="sectionLine"></div>
+            <ContactUs />
+            <div id="sectionLine"></div>
         </div>
-  </>
+        <Footer />
+    </>
 }
+
+// https://cricket.sportmonks.com/api/v2.0/players?api_token=PinCoryvGKxL0aaJdX8Z0zPKRxWYF1okRObrLL0dEO1XiaHSy9tMVgv2Dgh5
