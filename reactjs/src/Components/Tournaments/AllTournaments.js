@@ -45,7 +45,7 @@ export default function AllTournament() {
                 </div>
                 <div className="col-md-11 mx-auto d-flex flex-column flex-md-row gap-3 align-items-center justify-content-center">
                     <div className="col-md-1 text-top">
-                        <h4>Mon</h4>
+                        <h4>Monday</h4>
                         <h5>15</h5>
                     </div>
                     <div className="col-md-6">
