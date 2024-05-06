@@ -53,11 +53,11 @@ export default function PlayerProfile() {
                     <form>
                         <div id="user-box">
                             <label>Role</label>
-                            <input type="text" name="role" value={state.SubCategory.category.type}></input>
+                            <input type="text" name="role" value={state.SubCategory.category.role}></input>
                         </div>
                         <div id="user-box">
                             <label>Style</label>
-                            <input type="text" name="Style" value={state.SubCategory.type}></input>
+                            <input type="text" name="Style" value={state.SubCategory.style}></input>
                         </div>
                         <div id="user-box">
                             <label>Height</label>

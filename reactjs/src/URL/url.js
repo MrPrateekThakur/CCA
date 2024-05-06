@@ -14,7 +14,9 @@ let url = {
         , particular: 'http://localhost:3000/player/particular'
         , signin: 'http://localhost:3000/player/signIn'
         , signup: 'http://localhost:3000/player/signUp'
-        ,sendRequest: 'http://localhost:3000/player/sendRequest'
+        , sendRequest: 'http://localhost:3000/player/sendRequest'
+        , search: 'http://localhost:3000/player/search'
+        , searchByCategory: 'http://localhost:3000/player/searchByCategory'
     },
     tournament: {
         all: 'http://localhost:3000/tournament/viewAllTournament'
@@ -34,7 +36,8 @@ let url = {
         , add: 'http://localhost:3000/category/add'
     },
     subCategory: {
-        byCategory: 'http://localhost:3000/subCategory/byCategory'
+        all: 'http://localhost:3000/subCategory/all'
+        , byCategory: 'http://localhost:3000/subCategory/byCategory'
     }
 }
 

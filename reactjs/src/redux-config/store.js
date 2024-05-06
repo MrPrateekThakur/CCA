@@ -23,3 +23,16 @@
 // });
 
 // export default store;
+
+import { configureStore } from "@reduxjs/toolkit";
+import CategorySlice from "./CategorySlice.js";
+import SubCategorySlice from "./SubCategorySlice.js";
+
+const store = configureStore({
+    reducer: {
+        Category: CategorySlice,
+        SubCategory: SubCategorySlice 
+    }
+});
+
+export default store;
