@@ -37,7 +37,7 @@ export default function AllTournament() {
                     <h2 className="text-decoration-underline">All Tournament</h2>
                 </div>
             </div>
-            {/* <div id="sectionLine" className="mt-5"></div> */}
+
             {/* Current Tournament */}
             <div className="row mt-3">
                 <div className="col-md-12">
