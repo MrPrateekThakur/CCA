@@ -18,4 +18,6 @@
 
 #teamCard ::-webkit-scrollbar {
     display: none;
+    background-color: #080808;
 }
+

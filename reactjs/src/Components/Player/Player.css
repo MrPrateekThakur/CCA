@@ -124,3 +124,17 @@
     border-color: #474747;
     /*set the color you want here*/
 }
+
+#filterArea {
+    overflow-x: hidden;
+    max-height: 100vh;
+    padding-right: 1rem;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* overflowY: 'auto', maxHeight: '70rem', paddingRight: '1rem' */
+#filterArea ::-webkit-scrollbar {
+    display: none;
+}

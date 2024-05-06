@@ -186,7 +186,7 @@ export default function Tournament() {
     const endDate = new Date(tournament.tournament_end_date);
 
     return <>
-            <i class="btn fa-solid fa-arrow-left fa-2xl mt-5 ms-4" onClick={() => navigate(-1)} style={{ color: '#ffffff' }}></i>
+        <i class="btn fa-solid fa-arrow-left fa-2xl mt-5 ms-4" onClick={() => navigate(-1)} style={{ color: '#ffffff' }}></i>
         <div className='contenar p-5 d-flex flex-column align-items-center'>
             <div className='text text-center'>
                 <h1>Tournament Details</h1>
