@@ -36,7 +36,7 @@ export default function Banner() {
     // Define slider items
     const sliderItems = [
         {
-            imgSrc: "https://media.istockphoto.com/id/1733455091/photo/closeup-shot-of-a-young-indian-woman-celebrating-the-indian-cricket-teams-victory-watching-a.jpg?s=612x612&w=0&k=20&c=8gDbXjYzXicYVZsZUUPcNm0OtL78I_fJPCghPC5Ma9E=",
+            imgSrc: "https://img.freepik.com/premium-photo/photo-cricket-player-stadium-ready-icc-world-cup-2023-match-generative-ai_742418-6168.jpg?w=740",
             author: "LUNDEV",
             title: "DESIGN SLIDER",
             topic: "ANIMAL",
@@ -104,15 +104,17 @@ export default function Banner() {
             </div>
 
             <div className="thumbnail">
-                {sliderItems.map((item, index) => (
-                    <div className="item" key={index}>
-                        <img src={item.imgSrc} alt={`Thumbnail ${index}`} />
-                        <div className="content">
-                            <div className="title">Name Slider</div>
-                            <div className="description">Description</div>
+                {
+                    sliderItems.map((item, index) => (
+                        <div className="item" key={index}>
+                            <img src={item.imgSrc} alt={`Thumbnail ${index}`} />
+                            <div className="content">
+                                <div className="title">Name Slider</div>
+                                <div className="description">Description</div>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))
+                }
             </div>
 
             <div className="arrows">

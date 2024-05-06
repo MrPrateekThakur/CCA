@@ -1,9 +1,9 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import PlayerProfile from './Player/PlayerProfile.js';
 import OrganizerProfile from './Team/TeamDetails.js';
 import { HashLink } from 'react-router-hash-link';
 
-export default function Header() {
+export default function Header({ setSearchedList }) {
     let navigate = useNavigate();
 
     let profile = () => {
@@ -17,7 +17,7 @@ export default function Header() {
 
     return <>
         <nav className="navbar navbar-dark sticky-top p-3" style={{ backgroundColor: '#272929' }}>
-        {/* <nav className="navbar navbar-dark sticky-top p-3 pb-5" style={{ backdropFilter: 'blur(5px)' }}> */}
+            {/* <nav className="navbar navbar-dark sticky-top p-3 pb-5" style={{ backdropFilter: 'blur(5px)' }}> */}
             <div className="container-fluid">
                 {/* Left sidebar */}
                 <div className="offcanvas offcanvas-start p-5 text-bg-dark" tabIndex="-1" id="leftSidebar" aria-labelledby="leftSidebarLabel">
@@ -39,7 +39,7 @@ export default function Header() {
                                 <HashLink className="nav-link" to="/#playerContainer">Players</HashLink>
                             </li>
                             <li className="nav-item">
-                                <HashLink className="nav-link" to="/#tournamentContainer">Tournament </HashLink>
+                                <HashLink className="nav-link" to="/allTournament">Tournament </HashLink>
                             </li>
                             <li className="nav-item">
                                 <HashLink className="nav-link" to="/teams">Teams </HashLink>
@@ -109,7 +109,7 @@ export default function Header() {
                 </div>
 
                 <div className="col-md-4 col-6 offset-md-2 offset-1">
-                    <input type="text" placeholder="Search" style={{ backgroundColor: '#272727' }} className="form-control rounded-pill text-light" />
+                    <input type="text" onChange={(e) => setSearchedList(e.target.value)} placeholder="Search" style={{ backgroundColor: '#272727' }} className="form-control rounded-pill text-light" />
                 </div>
 
                 <div className="col-md-2 col-1 offset-2 offset-md-2 d-flex justify-content-center">

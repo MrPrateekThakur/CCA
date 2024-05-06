@@ -40,25 +40,27 @@ export default function UpcomingEvent() {
                 <h1>Upcoming Events</h1>
             </div>
             <div className="container text-white mt-3" id="tournamentContainer">
-                {data.map((upcomingData) => (
-                    <div className="row" key={upcomingData.tournament_id}>
-                        <div className="col-2">
-                            <h2>{new Date(upcomingData.tournament_apply_date).toLocaleString("en", { weekday: "short" })}</h2>
-                            <h2>{new Date(upcomingData.tournament_apply_date).getDate()}</h2>
+                {
+                    data.map((upcomingData) => (
+                        <div className="row" key={upcomingData.tournament_id}>
+                            <div className="col-2">
+                                <h2>{new Date(upcomingData.tournament_apply_date).toLocaleString("en", { weekday: "short" })}</h2>
+                                <h2>{new Date(upcomingData.tournament_apply_date).getDate()}</h2>
+                            </div>
+                            <div className="col-6">
+                                <span>{new Date(upcomingData.tournament_apply_date).toLocaleString("en", { weekday: "short" })} {new Date(upcomingData.tournament_apply_date).getDate()} {new Date(upcomingData.tournament_apply_date).getFullYear()} - {new Date(upcomingData.tournament_end_date).toLocaleString("en", { weekday: "short" })} {new Date(upcomingData.tournament_end_date).getDate()} {new Date(upcomingData.tournament_end_date).getFullYear()}</span>
+                                <h1 style={{ cursor: 'pointer' }} onClick={() => navigate('/tournament', { state: upcomingData.tournament_id })}>{upcomingData.tournament_name}</h1>
+                                <p>{upcomingData.tournament_address}</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores nostrum laboriosam dolore eaque asperiores veniam maxime velit itaque, maiores optio nulla cupiditate ipsam, tempora nam. Culpa, sit reprehenderit blanditiis rem explicabo nemo a atque deserunt!</p>
+                                <h2>&#8377; {upcomingData.tournament_fees}</h2>
+                            </div>
+                            <div className="col-4">
+                                <img src={upcomingData.banner} style={{ cursor: 'pointer' }} onClick={() => navigate('/tournament', { state: upcomingData.tournament_id })} alt="Tournament" width='100%' height='300px'></img>
+                            </div>
+                            <h1 className="m-4 ps-5"></h1>
                         </div>
-                        <div className="col-6">
-                            <span>{new Date(upcomingData.tournament_apply_date).toLocaleString("en", { weekday: "short" })} {new Date(upcomingData.tournament_apply_date).getDate()} {new Date(upcomingData.tournament_apply_date).getFullYear()} - {new Date(upcomingData.tournament_end_date).toLocaleString("en", { weekday: "short" })} {new Date(upcomingData.tournament_end_date).getDate()} {new Date(upcomingData.tournament_end_date).getFullYear()}</span>
-                            <h1 style={{ cursor: 'pointer' }} onClick={() => navigate('/tournament', { state: upcomingData.tournament_id })}>{upcomingData.tournament_name}</h1>
-                            <p>{upcomingData.tournament_address}</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores nostrum laboriosam dolore eaque asperiores veniam maxime velit itaque, maiores optio nulla cupiditate ipsam, tempora nam. Culpa, sit reprehenderit blanditiis rem explicabo nemo a atque deserunt!</p>
-                            <h2>&#8377; {upcomingData.tournament_fees}</h2>
-                        </div>
-                        <div className="col-4">
-                            <img src={upcomingData.banner} style={{ cursor: 'pointer' }} onClick={() => navigate('/tournament', { state: upcomingData.tournament_id })} alt="Tournament" width='100%' height='300px'></img>
-                        </div>
-                        <h1 className="m-4 ps-5"></h1>
-                    </div>
-                ))}
+                    ))
+                }
             </div>
         </>
     );
