@@ -1,5 +1,5 @@
 import express from "express";
-import { verifyAdmin } from "../Token/verifyToken.js";
+// import { verifyAdmin } from "../Token/verifyToken.js";
 import { body } from "express-validator";
 
 import { signUp, signIn, updateDetails } from "../Controller/admin.controller.js";
@@ -18,7 +18,7 @@ router.post("/signIn"
     , signIn);
 
 router.post('/update'
-    , verifyAdmin, updateDetails);
+    ,  updateDetails);
 // View
 
 export default router;
