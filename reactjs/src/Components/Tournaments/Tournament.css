@@ -8,7 +8,7 @@
     color: #ffffff;
 }
 
-#teamCard {
+#teamDetails {
     overflow-y: hidden;
     overflow-x: auto;
     height: 300px;
@@ -16,8 +16,7 @@
     scrollbar-width: none;
 }
 
-#teamCard ::-webkit-scrollbar {
+#teamDetails ::-webkit-scrollbar {
     display: none;
     background-color: #080808;
 }
-

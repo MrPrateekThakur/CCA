@@ -57,6 +57,7 @@ export default function AllTournament() {
                     </div>
                     <div className="col-md-3">
                         <img src="https://marketplace.canva.com/EAFtFmZSh9M/1/0/1131w/canva-black-and-yellow-illustrated-cricket-tournament-flyer-h9hyrBDURVU.jpg" alt="Tournament" className="img-fluid" />
+                        <h4 className="text-center text-decoration-underline mt-3">{}</h4>
                     </div>
                 </div>
             </div>
@@ -81,6 +82,7 @@ export default function AllTournament() {
                     </div>
                     <div className="col-md-3">
                         <img src="https://marketplace.canva.com/EAFtFmZSh9M/1/0/1131w/canva-black-and-yellow-illustrated-cricket-tournament-flyer-h9hyrBDURVU.jpg" alt="Tournament" className="img-fluid" />
+                        <h4 className="text-center text-decoration-underline mt-3">{}</h4>
                     </div>
                 </div>
             </div>
@@ -105,7 +107,8 @@ export default function AllTournament() {
                     </div>
                     <div className="col-md-3">
                         <img src="https://marketplace.canva.com/EAFtFmZSh9M/1/0/1131w/canva-black-and-yellow-illustrated-cricket-tournament-flyer-h9hyrBDURVU.jpg" alt="Tournament" className="img-fluid" />
-                    </div>
+                        <h4 className="text-center text-decoration-underline mt-3">{}</h4>
+                   </div>
                 </div>
             </div>
         </div>

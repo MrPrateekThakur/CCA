@@ -11,29 +11,47 @@
 #teamCard ::-webkit-scrollbar {
     display: none;
 }
- */
-#teamCard {
+*/
+
+#teamCard #tournamentTeam {
     position: relative;
 }
 
+#tournamentTeam {
+    height: 500px;
+    width: 200px;
+    bottom: 70%;
+}
+
 #teamViewMore {
-    bottom: 30%;
+    bottom: 35%;
+}
+
+#teamViewMore {
     left: 50%;
     width: 70%;
     height: 40px;
     transform: translate(-50%);
     position: absolute;
-    transition: all 0.9s ease;
+    transition: all 0.9s;
     opacity: 0;
 }
 
 #teamCard:hover #teamViewMore {
     top: 50%;
+}
+
+#teamCard:hover #teamViewMore {
     transform: translate(-50%, -50%);
     opacity: 1;
 }
 
+#tournamentTeam:hover #teamViewMore {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+
 #teamCard:hover img {
     opacity: 0.3 !important;
 }
-

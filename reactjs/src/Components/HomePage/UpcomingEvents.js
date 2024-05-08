@@ -55,9 +55,10 @@ export default function UpcomingEvent() {
                                 <h2>&#8377; {upcomingData.tournament_fees}</h2>
                             </div>
                             <div className="col-4">
-                                <img src={upcomingData.banner} style={{ cursor: 'pointer' }} onClick={() => navigate('/tournament', { state: upcomingData.tournament_id })} alt="Tournament" width='100%' height='300px'></img>
+                                <img src={upcomingData.banner} style={{ cursor: 'pointer' }} onClick={() => navigate('/tournament', { state: upcomingData.tournament_id })} alt="Tournament" width='100%' height='300px' />
+                                {/* <h4 className="text-center text-decoration-underline mt-3">{upcomingData.tournament_name}</h4> */}
                             </div>
-                            <h1 className="m-4 ps-5"></h1>
+                            <h1 className="m-2 ps-5"></h1>
                         </div>
                     ))
                 }
