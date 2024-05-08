@@ -219,9 +219,9 @@ a {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #eee4;
+    background-color: #9E9E9E;
     border: none;
-    color: #fff;
+    color: black;
     font-family: monospace;
     font-weight: bold;
     transition: .5s;

@@ -1,7 +1,7 @@
 import express from "express";
 
 import { removeCategory, addCategory, getCategory } from '../Controller/category.controller.js';
-import { verifyAdmin } from "../Token/verifyToken.js";
+// import { verifyAdmin } from "../Token/verifyToken.js";
 
 let router = express.Router();
 

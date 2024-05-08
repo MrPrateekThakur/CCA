@@ -3,7 +3,7 @@ import multer from "multer";
 import { body } from "express-validator";
 
 import { signUp, signIn, searchByCategory, searchAllPlayer, update, viewAllUser, viewUser, removeUser, requestToPlayer } from "../Controller/player.controller.js";
-import { verifyAdmin, verifyUser } from "../Token/verifyToken.js";
+// import { verifyAdmin, verifyUser } from "../Token/verifyToken.js";
 
 let upload = multer({ dest: 'public/' });
 let router = express.Router();
@@ -42,7 +42,6 @@ router.post("/viewParticular",
 
 router.delete("/removePlayer",
     body(`email`, `Invalid email`).isEmail().notEmpty().isAlpha(),
-    verifyAdmin,
     removeUser);
 
 router.post('/sendRequest', requestToPlayer);
